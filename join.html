@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Join Us | Photography Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shadow">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold" href="#"><i class="bi bi-camera-fill me-2"></i>Photography Club</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Join Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Banner -->
+<header class="hero-banner position-relative text-white text-center d-flex align-items-center justify-content-center">
+  <img src="images/hero.jpg" alt="Photography Club Hero" class="hero-bg-img">
+  <div class="banner-content position-absolute">
+    <h1 class="display-4 fw-bold">Join Our Club</h1>
+    <p class="lead">Be part of a community that captures stories through the lens.</p>
+  </div>
+</header>
+
+<!-- Join Us Section -->
+<section class="join-section py-5 text-white">
+  <div class="container">
+    <h2 class="section-heading">Why Join Us?</h2>
+    <p class="short-text">
+      Whether you're just starting out or already skilled, our club helps you grow your talent.
+    </p>
+    <div class="row g-4 mt-4 fade-in">
+      <div class="col-md-4 text-center">
+        <i class="bi bi-camera-reels display-4 text-warning mb-3"></i>
+        <h5>Workshops & Events</h5>
+        <p>Attend hands-on sessions with experienced mentors and guest photographers.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="bi bi-images display-4 text-info mb-3"></i>
+        <h5>Gallery Showcases</h5>
+        <p>Share your work in exhibitions, publications, and school-wide events.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="bi bi-people-fill display-4 text-success mb-3"></i>
+        <h5>Community</h5>
+        <p>Meet friends who share your passion and explore creative projects together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sign Up Form - Enhanced -->
+<section class="signup-section">
+  <div class="container fade-in">
+    <h2 class="text-center">Sign Up Now</h2>
+    <p class="text-center leader-subtext">Fill in the form and we'll get back to you soon!</p>
+    <form class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">School Email</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="course" class="form-label">Course</label>
+        <input type="text" class="form-control" id="course" />
+      </div>
+      <div class="mb-3">
+        <label for="reason" class="form-label">Why do you want to join?</label>
+        <textarea class="form-control" id="reason" rows="3"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn">Join Now</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-5 text-white">
+  <div class="container fade-in">
+    <h2 class="section-heading text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item bg-dark text-white mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+            Do I need my own camera to join?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            No, you don't need to have your own camera. Our club provides equipment for events and workshops.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark text-white mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+            Is there a membership fee?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            No, our club is free to join and open to all students interested in photography.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark text-white mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+            How often do events and workshops happen?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We organize workshops and events approximately once every month during the semester.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-5 text-white" style="background-color: #2a2a2a;">
+  <div class="container fade-in">
+    <h2 class="section-heading text-center mb-4">What Our Members Say</h2>
+    <div class="row justify-content-center g-4">
+      
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100 shadow rounded-4 p-3">
+          <div class="card-body">
+            <p class="card-text fst-italic">"Joining this club helped me improve my photography skills and meet amazing friends!"</p>
+            <h5 class="card-title mt-4 mb-0">- Maya Lee, Year 2</h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100 shadow rounded-4 p-3">
+          <div class="card-body">
+            <p class="card-text fst-italic">"The workshops are so hands-on and inspiring. I always look forward to them."</p>
+            <h5 class="card-title mt-5 mb-0">- Daniel Wong, Year 3</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100 shadow rounded-4 p-3">
+          <div class="card-body">
+            <p class="card-text fst-italic">"Being part of the community has really boosted my confidence behind the lens."</p>
+            <h5 class="card-title mt-5 mb-0">- Sarah Tan, Year 1</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/join.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photography Club | Our Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shadow">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold" href="#"><i class="bi bi-camera-fill me-2"></i>Photography Club</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="join.html">Join Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Banner -->
+<header class="hero-banner position-relative text-white text-center d-flex align-items-center justify-content-center">
+  <!-- Fullscreen Image -->
+  <img src="images/hero.jpg" alt="Photography Club Hero" class="hero-bg-img">
+
+  <!-- Banner Content -->
+  <div class="banner-content position-absolute">
+    <h1 class="display-4 fw-bold">Our Leaders</h1>
+    <p class="lead">Capturing Moments. Creating Stories.</p>
+  </div>
+</header>
+
+<!-- Club Intro -->
+<section class="club-intro py-5 text-light text-center ">
+  <div class="container">
+    <h2 class="section-heading">Who Are We?</h2>
+    <p class="lead">We are a passionate group of storytellers, creators, and dreamers who use cameras as our voice. Whether you're a beginner or a pro, this club welcomes all photography lovers to explore and share creativity.</p>
+  </div>
+</section>
+
+<!-- Team Cards -->
+<section class="team-section pb-5">
+  <div class="container text-center">
+   <p class="leader-subtext fade-in">Meet the passionate individuals leading our Photography Club.</p>
+    <div class="row g-4 justify-content-center" id="teamContainer">
+
+      <!-- Team Member Card -->
+      <div class="col-md-4 team-card-item fade-in" data-role="President">
+        <div class="card team-card text-center shadow" onclick="toggleInfo(this)">
+          <img src="images/alex.jpg" class="card-img-top" alt="Alex Tan"> 
+          <div class="card-body">
+            <h5 class="card-title">Alex Tan <span class="badge bg-warning text-dark">President</span></h5>
+            <p class="card-text"><i class="bi bi-lightning-charge-fill me-1"></i>Vision & Direction</p>
+            <a href="mailto:alex@photo.com" class="email-link d-block mt-2">alex@photo.com</a>
+             <div class="more-info">
+              <p><strong>Year 3 student</strong> from <em>Digital Media & Design</em>.</p>
+              <p>Alex believes photography tells stories words cannot. He leads with creativity and heart.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 team-card-item fade-in" data-role="Vice President">
+        <div class="card team-card text-center shadow" onclick="toggleInfo(this)">
+          <img src="images/bella.jpg" class="card-img-top" alt="Bella Lim">
+          <div class="card-body">
+            <h5 class="card-title">Bella Lim <span class="badge bg-info text-dark">Vice President</span></h5>
+            <p class="card-text"><i class="bi bi-calendar2-check-fill me-1"></i>Events & Workshops</p>
+            <a href="mailto:bella@photo.com" class="email-link d-block mt-2">bella@photo.com</a>
+            <div class="more-info">
+              <p><strong>Year 2 student</strong> from <em>Information Technology</em>.</p>
+              <p>Bella enjoys organizing outdoor shoots and building a creative space for all members.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 team-card-item fade-in" data-role="Treasurer">
+        <div class="card team-card text-center shadow" onclick="toggleInfo(this)">
+          <img src="images/chris.jpg" class="card-img-top" alt="Chris Lee">
+          <div class="card-body">
+            <h5 class="card-title">Chris Lee <span class="badge bg-success">Treasurer</span></h5>
+            <p class="card-text"><i class="bi bi-cash-stack me-1"></i>Finance & Equipment</p>
+            <a href="mailto:chris@photo.com" class="email-link d-block mt-2">chris@photo.com</a>
+            <div class="more-info">
+              <p><strong>Year 3 student</strong> from <em>Business Information Systems</em>.</p>
+              <p>Chris loves the technical side of photography, especially gear and editing tools.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Member: Events Coordinator -->
+      <div class="col-md-4 team-card-item fade-in" data-role="Events Coordinator">
+        <div class="card team-card text-center shadow" onclick="toggleInfo(this)">
+          <img src="images/sara.jpg" class="card-img-top" alt="Sara Goh">
+          <div class="card-body">
+            <h5 class="card-title">Sara Goh <span class="badge bg-primary">Events</span></h5>
+            <p class="card-text"><i class="bi bi-people-fill me-1"></i>Community Engagement</p>
+            <a href="mailto:sara@photo.com" class="email-link d-block mt-2">sara@photo.com</a>
+            <div class="more-info">
+              <p><strong>Year 2 student</strong> from <em>Mass Communication</em>.</p>
+              <p>Sara's passion is connecting people through visual stories and photo exhibitions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member: Social Media Lead -->
+      <div class="col-md-4 team-card-item fade-in" data-role="Social Media">
+        <div class="card team-card text-center shadow" onclick="toggleInfo(this)">
+          <img src="images/jordan.jpg" class="card-img-top" alt="Jordan Ng">
+          <div class="card-body">
+            <h5 class="card-title">Jordan Ng <span class="badge bg-danger">Social Media</span></h5>
+            <p class="card-text"><i class="bi bi-instagram me-1"></i>Content & Promotion</p>
+            <a href="mailto:jordan@photo.com" class="email-link d-block mt-2">jordan@photo.com</a>
+            <div class="more-info">
+              <p><strong>Year 3 student</strong> from <em>Interactive Media</em>.</p>
+              <p>Jordan enjoys capturing behind-the-scenes moments and sharing them with the school.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member: Logistics Lead -->
+      <div class="col-md-4 team-card-item fade-in" data-role="Logistics">
+        <div class="card team-card text-center shadow" onclick="toggleInfo(this)">
+          <img src="images/emily.jpg" class="card-img-top" alt="Emily Tan">
+          <div class="card-body">
+            <h5 class="card-title">Emily Tan <span class="badge bg-secondary">Logistics</span></h5>
+            <p class="card-text"><i class="bi bi-box-seam me-1"></i>Gear & Transport</p>
+            <a href="mailto:emily@photo.com" class="email-link d-block mt-2">emily@photo.com</a>
+            <div class="more-info">
+              <p><strong>Year 2 student</strong> from <em>Engineering Systems</em>.</p>
+              <p>Emily takes pride in making every shoot smooth and efficient — always ready to help.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+<!-- Bootstrap + Custom Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
