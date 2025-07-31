@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📸 Photography Club - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">📸 Photography Club</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="join-us.html">Join Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron jumbotron-fluid text-center bg-light py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to the School Photography Club!</h1>
+            <p class="lead">Capture moments, create memories.</p>
+            <img src="Images/1982fad01e92d630ac50d50a9a36f0b5.jpg" class="img-fluid rounded shadow" alt="Students taking photos" style="max-height: 400px; object-fit: cover;">
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section id="about" class="mb-5">
+            <div class="text-center">
+                <h2 class="section-heading">About Us</h2>
+            </div>
+            <p>The School Photography Club is a vibrant community for students passionate about the art of photography. Whether you're a seasoned pro or just starting out, we provide a platform to learn, share, and grow your skills. We organize workshops, photo walks, and exhibitions to explore various photography genres and techniques.</p>
+            <div class="embed-responsive embed-responsive-16by9 my-4">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <small class="d-block text-muted mt-2">A quick introduction to our club activities (example video).</small>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="events" class="mb-5">
+            <div class="text-center">
+                <h2 class="section-heading">Upcoming Events</h2>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Event</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-08-15</td>
+                            <td>Sunset Photo Walk</td>
+                            <td>Botanic Gardens</td>
+                            <td>Capture the golden hour's beauty.</td>
+                        </tr>
+                        <tr>
+                            <td>2025-09-02</td>
+                            <td>Portrait Photography Workshop</td>
+                            <td>School Studio</td>
+                            <td>Learn lighting and posing techniques.</td>
+                        </tr>
+                        <tr>
+                            <td>2025-10-10</td>
+                            <td>Annual Photo Exhibition</td>
+                            <td>School Hall</td>
+                            <td>Showcase the best works of the year.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+        
+        <section id="contact" class="mb-5">
+            <div class="text-center">
+                <h2 class="section-heading">Contact Us</h2>
+            </div>
+            <p>Have a question or want to get in touch? Fill out the form below!</p>
+            <form action="response.html" method="GET">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>© 2025 School Photography Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
