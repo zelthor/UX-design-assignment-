@@ -1,0 +1,104 @@
+social bar
+
+in .html add the following codes 
+ <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ </head>
+
+ <body>
+    <div class="social-bar">
+        <ul>
+            <li>
+                <a href="#" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" aria-label="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+
+
+in your .css file add the following codes
+
+/* --- Sticky Social Bar Styling --- */
+.social-bar {
+    position: fixed; /* Makes the element sticky and stay in place */
+    top: 50%; /* Positions the top edge of the bar at 50% of the viewport height */
+    left: 0; /* Aligns the bar to the left edge of the viewport */
+    transform: translateY(-50%); /* Moves the bar up by half its own height to center it vertically */
+    z-index: 1000; /* Ensures the bar stays on top of all other content */
+    background-color: #171717;
+    border-radius: 0 5px 5px 0; /* Rounds the right-side corners */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 5px;
+}
+
+.social-bar ul {
+    list-style: none; /* Removes the default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.social-bar li {
+    margin-bottom: 15px; /* Adds space between the social icons */
+}
+
+.social-bar a {
+    color: #fff;
+    font-size: 1.5rem;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative; /* Needed to position the pseudo-element inside */
+    overflow: hidden; /* Hides the gradient until it's revealed on hover */
+}
+
+.social-bar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffcc00, #ff6699); /* The gradient that will appear on hover */
+    z-index: -1; /* Puts the gradient behind the icon */
+    transform: translateY(100%); /* Hides the gradient by moving it completely off the bottom */
+    transition: transform 0.3s ease;
+}
+
+.social-bar a:hover::before {
+    transform: translateY(0); /* Moves the gradient up into view on hover */
+}
+
+.social-bar a:hover {
+    color: #171717; /* Changes icon color to a dark shade on hover for better contrast */
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: #171717 !important;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    color: #ced4da;
+}
