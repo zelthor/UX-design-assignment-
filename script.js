@@ -1,5 +1,4 @@
 
-
 // Fade-in on scroll
 function handleFadeIn() {
   const fadeEls = document.querySelectorAll('.fade-in');

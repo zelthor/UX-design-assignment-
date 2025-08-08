@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📸 Photography Club - Submission Received</title>
+    <title>📸 Photography Club | Home</title>
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styleS.css">
 </head>
+
 <body>
- 
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -49,25 +54,29 @@
     </ul>
 </div>
 
-    <header class="jumbotron jumbotron-fluid text-center bg-light py-5">
-        <div class="container">
-            <h1 class="display-4">Thank You for Your Submission!</h1>
-            <p class="lead">We have received your message and will get back to you shortly.</p>
-        </div>
-    </header>
-
     <main class="container my-5">
-        <div class="text-center">
-            <h2 class="section-heading">Submitted</h2>
-        </div>
-        <div class="card p-4">
-            <p><strong>Full Name:</strong> <span id="displayFullName"></span></p>
-            <p><strong>Email Address:</strong> <span id="displayEmail"></span></p>
-            <p><strong>Message:</strong> <span id="displayMessage"></span></p>
-        </div>
-        <div class="text-center mt-4">
-            <a href="index.html" class="btn btn-primary">Go back to Home</a>
-        </div>
+        <section id="contact" class="mb-5">
+            <div class="text-center">
+                <h2 class="section-heading">Contact Us</h2>
+            </div>
+            <p>Have a question or want to get in touch? Fill out the form below!</p>
+            <form action="response.html" method="GET">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
     </main>
 
     <footer class="bg-dark text-white text-center py-3">
@@ -77,17 +86,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get the URL parameters
-            const params = new URLSearchParams(window.location.search);
-            
-            // Set the content of the corresponding spans
-            document.getElementById('displayFullName').textContent = params.get('fullName') || 'N/A';
-            document.getElementById('displayEmail').textContent = params.get('email') || 'N/A';
-            document.getElementById('displayMessage').textContent = params.get('message') || 'N/A';
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 </html>

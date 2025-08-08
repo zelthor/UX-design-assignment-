@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Photography Club | Sub Gallery - Urban Sunset</title>
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="styleS.css">
+    </head>
+    <style>
+                .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        }
+
+        .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"></a><i class="bi bi-camera-fill me-2"></i>Photography Club</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-door me-1"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html"><i class="bi bi-images me-1"></i> Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html"><i class="bi bi-people me-1"></i> Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="join.html"><i class="bi bi-person-plus me-1"></i> Join Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1"></i> Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Social Bar -->
+<div class="social-bar">
+    <ul>
+        <li><a href="#" target="_blank" aria-label="TikTok"><i class="bi bi-tiktok"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Telegram"><i class="bi bi-telegram"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
+    </ul>
+</div>
+
+
+    <header class="jumbotron jumbotron-fluid text-center bg-light py-5">
+        <div class="container">
+            <h1 class="display-4">Urban Sunset</h1>
+            <p class="lead">A showcase of moments captured by our talented members.</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="text-center">
+            <h2 class="section-heading">Gallery of Urban Sunset</h2>
+            <p>Take a look through some of the photograpghs we have taken!!!</p>
+        </div>
+    <sections>
+        <div class="row">
+        <div class="column">
+            <img src="Images/urbansunset1.jpg">
+            <img src="Images/urbansunset2.jpeg">
+            <img src="Images/urbansunset3.jpg">
+            <img src="Images/urbansunset4.jpg">
+            <img src="Images/urbansunset5.jpg">
+            <img src="Images/urbansunset6.jpg">
+            <img src="Images/urbansunset7.jpg">
+        </div>
+        <div class="column">
+            <img src="Images/urbansunset8.jpg">
+            <img src="Images/urbansunset9.jpg">
+            <img src="Images/urbansunset10.jpg">
+            <img src="Images/urbansunset11.jpg">
+            <img src="Images/urbansunset12.jpg">
+            <img src="Images/urbansunset13.jpg">
+        </div>
+        <div class="column">
+            <img src="Images/urbansunset14.jpg">
+            <img src="Images/urbansunset1.jpg">
+            <img src="Images/urbansunset2.jpeg">
+            <img src="Images/urbansunset3.jpg">
+            <img src="Images/urbansunset4.jpg">
+            <img src="Images/urbansunset5.jpg">
+            <img src="Images/urbansunset6.jpg">
+        </div>
+        <div class="column">
+            <img src="Images/urbansunset7.jpg">
+            <img src="Images/urbansunset8.jpg">
+            <img src="Images/urbansunset9.jpg">
+            <img src="Images/urbansunset10.jpg">
+            <img src="Images/urbansunset11.jpg">
+            <img src="Images/urbansunset12.jpg">
+        </div>
+        </div>
+    </sections> 
+    
+    <div class="text-center mt-4">
+        <a href="gallery.html" class="btn btn-primary">Previous</a>
+    </div>
+    
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>© 2025 School Photography Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

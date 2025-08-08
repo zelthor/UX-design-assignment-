@@ -1,0 +1,354 @@
+/* Custom CSS for Photography Club Website - Dark Theme */
+
+/* --- General Body and Typography --- */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #212121; /* Dark background color for the entire page */
+    color: #f8f9fa; /* Light text color for readability on the dark background */
+    text-align: center;
+}
+
+/* --- Header & Navigation --- */
+.navbar {
+    background-color: #171717 !important; /* Even darker navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f8f9fa; /* Ensure brand name is white */
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.nav-link:hover {
+    color: #ff99cc !important; /* Pink color on hover */
+}
+
+.jumbotron {
+    background-image: url('Images/camera.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.jumbotron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Optional: Dark overlay for better text contrast */
+}
+
+.jumbotron > * {
+    position: relative; /* Ensure text and content are above the overlay */
+    z-index: 1;
+}
+
+.jumbotron h1 {
+    font-weight: 700;
+}
+
+.jumbotron img {
+    margin-top: 2rem;
+    border: 5px solid #212121; /* Creates a border that matches the body background */
+    filter: blur(5px); /* Apply a blur effect */
+    /* OR */
+    /* filter: brightness(70%); /* Apply a dark tint */
+    transition: filter 0.3s ease; /* Optional: smooth transition for hover */
+}
+
+.jumbotron img:hover {
+    filter: blur(0); /* Remove blur on hover */
+    /* OR */
+    /* filter: brightness(100%); /* Remove dark tint on hover */
+}
+/* button */
+.btn {
+    background: #ff6699;
+    color: #f8f9fa;
+    border-radius: 0.5rem;
+    border-color: linear-gradient(to right, #ffd738, #ff5a91);
+    font-weight: 100;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ff5a91;
+    border-color: #ff3377;
+}
+
+/* --- About --- */
+
+
+/* --- Section Headings --- */
+.section-heading {
+    color: #ffffff;
+    font-weight: 600;
+    position: relative; /* Needed for positioning the pseudo-element below */
+    padding-top: 1rem;
+    padding-bottom: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute; /* Positions the underline relative to the heading */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the underline horizontally */
+    height: 3px;
+    width: 80px;
+    background: linear-gradient(to right, #ffcc00, #ff6699); /* Creates the yellow-to-pink gradient underline */
+}
+
+/* --- Table --- */
+.custom-table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 1rem;
+    box-shadow: 0 0 0 2px transparent;
+    transition: all 0.3s ease;
+}
+
+.custom-table thead th {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    background: #2c2c2c;
+    color: #ffffff;
+}
+
+.custom-table tbody tr {
+    transition: all 0.3s ease;
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(to right, #ffcc00, #ff6699) 1;
+}
+
+.custom-table tbody td {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(to right, #ffcc00, #ff6699) 1;
+}
+
+.custom-table tbody tr:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.custom-table tbody tr:hover td {
+    background-color: rgba(255, 0, 166, 0.05);
+}
+
+.custom-table tbody tr:first-child td {
+    border-top: none;
+}
+
+/* --- Form --- */
+form {
+    position: relative;
+    z-index: 1;
+    background-color: #2c2c2c; /* Form container background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 214, 0, 0.1);
+    border: 1px solid #333;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.form-control {
+    background-color: #383838; /* Input field background */
+    color: #f8f9fa; /* Input text color */
+    border-color: #555;
+}
+
+.form-control::placeholder {
+    color: #999;
+    opacity: 0.7;
+}
+
+.form-control:focus {
+    background-color: #383838;
+    color: #f8f9fa;
+    border-color: #ffcc00; /* Yellow border on focus */
+    box-shadow: 0 0 0 0.25rem rgba(255, 204, 0, 0.25); /* Yellow glow on focus */
+}
+
+.form-text {
+    color: #999;
+}
+
+.btn-primary {
+    background-color: #ff6699; /* Pink button background */
+    border-color: #ff6699;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff3377; /* Darker pink on hover */
+    border-color: #ff3377;
+}
+
+/* --- Gallery & Card Styling --- */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #444;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #2c2c2c;
+    color: #f8f9fa;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lifts the card up slightly on hover */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #ff99cc; /* Pink card title */
+    font-weight: 600;
+}
+
+.card-text {
+    color: #f8f9fa;
+}
+
+/* --- Sticky Social Bar Styling --- */
+.social-bar {
+    position: fixed; /* Makes the element sticky and stay in place */
+    top: 30%; /* Positions the top edge of the bar at 50% of the viewport height */
+    left: 0; /* Aligns the bar to the left edge of the viewport */
+    transform: translateY(-50%); /* Moves the bar up by half its own height to center it vertically */
+    z-index: 1000; /* Ensures the bar stays on top of all other content */
+    background-color: #171717;
+    border-radius: 0 5px 5px 0; /* Rounds the right-side corners */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 5px;
+}
+
+.social-bar ul {
+    list-style: none; /* Removes the default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.social-bar li {
+    margin-bottom: 15px; /* Adds space between the social icons */
+}
+
+.social-bar a {
+    color: #fff;
+    font-size: 1.5rem;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative; /* Needed to position the pseudo-element inside */
+    overflow: hidden; /* Hides the gradient until it's revealed on hover */
+}
+
+.social-bar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffcc00, #ff6699); /* The gradient that will appear on hover */
+    z-index: -1; /* Puts the gradient behind the icon */
+    transform: translateY(100%); /* Hides the gradient by moving it completely off the bottom */
+    transition: transform 0.3s ease;
+}
+
+.social-bar a:hover::before {
+    transform: translateY(0); /* Moves the gradient up into view on hover */
+}
+
+.social-bar a:hover {
+    color: #171717; /* Changes icon color to a dark shade on hover for better contrast */
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: #171717 !important;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    color: #ced4da;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* --- Fade-in on scroll styling --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Team Card Toggle Styling --- */
+.team-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.team-card.expanded {
+    transform: scale(1.05); /* Example effect on click */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
